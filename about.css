@@ -1,4 +1,4 @@
+/* This rule applies a margin of 5% on the top and bottom and 20% on the left and right sides to the HTML element with the class "activity-text" */
 .activity-text{
-    margin:5% 20%;
-
+    margin: 5% 20%;
 }

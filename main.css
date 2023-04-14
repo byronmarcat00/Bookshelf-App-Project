@@ -1,32 +1,33 @@
-
+/* Apply box-sizing: border-box and margin: 0 to all elements in the webpage */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    
+  box-sizing: border-box;
+  margin: 0;
+}
 
- }
-
- .main-head {
+/* Set the width to 95%, center the element horizontally, add a box shadow and margin at the bottom to .main-head */
+.main-head {
   width : 95%;
   margin : 0 auto;
   margin-bottom : 0.5%;
   box-shadow : 0px 10px 10px rgba(0, 0, 0, 0.1);
-
 }
+
+/* Set display to flex, justify-content to space-around, align-items to center, flex-direction to row, and flex-wrap to wrap for nav element */
 nav {
   display : flex;
   justify-content : space-around;
   align-items : center;
   flex-direction : row;
   flex-wrap : wrap;
-
 }
+
+/* Add margin to the logo element */
 .logo {
   margin : 2rem;
   font-size:  1.5rem;
-
 }
 
+/* Set display to flex, justify-content to space-around, align-items to center, flex-direction to row, and flex to 1 1 40rem, and list-style to none for ul element in .header */
 .header > ul {
   display : flex;
   justify-content : space-around;
@@ -34,67 +35,67 @@ nav {
   flex-direction : row;
   flex : 1 1 40rem;
   list-style : none;
-
 }
-a{
 
+/* Set font-family to sans-serif, font-size to 1.5rem, text-decoration to none, and color to black for a element */
+a{
   font-family: sans-serif;
   font-size : 1.5rem;
   text-decoration : none;
   color : black;
-
 }
 
+/* Remove underline from visited links */
 a:visited {
   text-decoration : none;
 }
 
-
+/* Set background, color, padding, and border-radius for elements with class "active" */
 .active {
-      background : #2c2c2c;
-      color : white;
-      padding : 0.2rem 3rem;
-      border-radius : 2rem;
+  background : #2c2c2c;
+  color : white;
+  padding : 0.2rem 3rem;
+  border-radius : 2rem;
 }
 
+/* Set margin, border-style, border-radius, and padding for #container element */
+#container{
+  margin: 2rem 2rem;
+  border-style: groove;
+  border-radius: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-/* render the container styles  */
- #container{
-
-    margin: 2rem 2rem;
-    border-style: groove;
-    border-radius: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
- }
-/* center header  and styles it*/
+/* Set text-align, font-family, and font-size for #header element */
 #header{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3rem;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3rem;
 }
 
-/* changes the color of each item in  alterative order */
+/* Set font-size and padding for li elements */
+li{
+  font-size: 1.3rem;
+  padding:1rem 0.5rem;
+}
 
+/* Set display to flex, justify-content to center, and align-items to center for elements with class "addbooknav" */
+.addbooknav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  li{
-    font-size: 1.3rem;
-    padding:1rem 0.5rem;
-  }
-  .addbooknav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .sortnav {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1%;
-    margin: 0 10%;
-    
-  }
-
+/* Set display to flex, justify-content to space-around, padding-top to 1%, and margin to 0 10% for elements with class "sortnav" */
+.sortnav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+  margin: 0 10%;
+}
+/* Set background-color and border-radius for even numbered li elements in elements with class .bookseven */
   .bookseven >  li:nth-child(even) {
     background-color: aqua;
     border-radius: 0.5rem;

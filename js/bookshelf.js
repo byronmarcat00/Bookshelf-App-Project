@@ -50,10 +50,13 @@ class BookShelf {
     bookContainer.append(bookList);
   }
 
-  // The add method adds a new book to the books array and calls the render method to update the book list display
+  // The add method adds a new book to the books array and updates the book list display
   add(book) {
     this.books.push(book);
-    this.render();
+  
+    const bookList = document.querySelector(".bookseven");
+    const bookListItem = book.render();
+    bookList.appendChild(bookListItem);
   }
 
   // The countFavoriteBooks method returns the number of books marked as favorites in the books array
